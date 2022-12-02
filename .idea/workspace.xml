@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed01914-bbe2-444b-ab5b-855b123ce351" name="Changes" comment="program">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/newsudoku/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/newsudoku/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/newsudoku/SudokuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/newsudoku/SudokuApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/problemdomain/SudokuGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problemdomain/SudokuGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/newsudoku/gameplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/newsudoku/gameplay.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/newsudoku/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/newsudoku/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="1ed01914-bbe2-444b-ab5b-855b123ce351" name="Changes" comment="program" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669959882565</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="program">
+      <created>1670013502228</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670013502229</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
