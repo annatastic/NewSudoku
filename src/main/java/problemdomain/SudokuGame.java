@@ -1,24 +1,26 @@
 package problemdomain;
 
-public class SudokuGame {
-  //  private final GameState gameState;
-  //  private final int[][] gridState;
+import computationlogic.Utilities;
+import constants.GameState;
 
-    public static final int BOUNDARY = 9; }
+public class SudokuGame {
+   private final GameState gameState;
+   private final int[][] gridState;
+
+    public static final int BOUNDARY = 9;
 
     // constructor assigns passed values to gameState and gridState
-  //  public SudokuGame(GameState game, int[][] grid) {
-  //      gameState = game;
-  ///\      gridState = grid;
- //   }
+  public SudokuGame(GameState game, int[][] grid) {
+       gameState = game;
+       gridState = grid;
+    }
 
-  /*  public GameState getGameState() {
+   public GameState getGameState() {
         return gameState;
     }
 
     public int[][] getCopyOfGridState(){
-        return SudokuUtilities.copyToNewArray(gridState);
+        return Utilities.copyToNewArray(gridState);
     }
-    // ^^^^ most likely can be replaced with clone() method.
+    // ^^^^ most likely can be replaced with clone() method?
 }
-*/
