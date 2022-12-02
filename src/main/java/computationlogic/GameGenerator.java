@@ -10,7 +10,7 @@ import static problemdomain.SudokuGame.BOUNDARY;
 
 public class GameGenerator {
 
-    public static int[][] getNewBoard() {
+  /*  public static int[][] getNewBoard() {
         return unfillBoard(fillBoard());
     }
 
@@ -40,5 +40,5 @@ public class GameGenerator {
             }
 
         }
-    }
+    }  */
 }
