@@ -1,10 +1,10 @@
 package userinterface;
 
-public class TextField extends javafx.scene.control.TextField {
+public class SudokuTextField extends javafx.scene.control.TextField {
     private final int x;
     private final int y;
 
-    public TextField(int x, int y) {
+    public SudokuTextField(int x, int y) {
         this.x = x;
         this.y = y;
     }
