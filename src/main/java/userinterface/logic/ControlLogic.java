@@ -1,5 +1,7 @@
 package userinterface.logic;
 
+import constants.GameState;
+import constants.Messages;
 import problemdomain.Storage;
 import problemdomain.SudokuGame;
 import userinterface.UserInterface;
@@ -30,7 +32,13 @@ public class ControlLogic implements UserInterface.EventListener {
             storage.updateGameData(gameData);
             view.updateSquare(x,y,input);
 
+            if (gameData.getGameState() == GameState.COMPLETE){
+                view.showDialog(Messages.GAMECOMPLETE);
+            }
+
         } catch (IOException e) {
+            e.printStackTrace();
+            view.showError(Messages.ERROR);
 
         }
     }
@@ -38,6 +46,13 @@ public class ControlLogic implements UserInterface.EventListener {
 
     @Override
     public void onDialogClick() {
+        try{
+            storage.updateGameData(GameLogic.getNewGame());
+            view.updateBoard(storage.getGameData());
+
+        } catch (IOException e) {
+            view.showError(Messages.ERROR);
+        }
 
     }
 
