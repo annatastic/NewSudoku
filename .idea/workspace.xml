@@ -7,7 +7,6 @@
     <list default="true" id="1ed01914-bbe2-444b-ab5b-855b123ce351" name="Changes" comment="program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/computationlogic/GameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/computationlogic/GameGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/userinterface/logic/ControlLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/logic/ControlLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673056583868</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="program">
+      <created>1673383768439</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673383768439</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

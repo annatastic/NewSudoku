@@ -69,11 +69,30 @@ public class GameGenerator {
         Random random = new Random(System.currentTimeMillis());
 
         boolean solvable = false;
-        int[][] puzzle = new int[BOUNDARY][BOUNDARY];  //solveableArray
+        int[][] puzzle = new int[BOUNDARY][BOUNDARY];  //solvableArray
 
         while (!solvable) {
-            Utilities.copyS
+            Utilities.copySudokuArray(filledBoard, puzzle);
+
+            int index = 0;
+
+        // remove 40 random values from puzzle
+            while (index < 40) {
+                int x = random.nextInt(BOUNDARY);
+                int y = random.nextInt(BOUNDARY);
+
+                if (puzzle[x][y] != 0 ) {
+                    puzzle[x][y] = 0;
+                    index++;
+                }
+            }
+        // check if the resulting puzzle is solvable
+            int[][] toBeSolved = new int[BOUNDARY][BOUNDARY];
+            Utilities.copySudokuArray(puzzle, toBeSolved);
+            solvable = SudokuSolver.puzzleIsSolvable(toBeSolved);
+
         }
+        return puzzle;
     }
 
 
