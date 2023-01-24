@@ -40,9 +40,9 @@ public class UIImplementation implements UserInterface.View,
     private static final Color WINDOW_BG_COLOR = Color.rgb(171,131, 185);
     private static final Color BOARD_BG_COLOR = Color.rgb(243,243,243);
 
-    public UIImplementation(Stage stage) {
-        this.stage = stage;
-        this.root = new Group();
+    public UIImplementation(Stage thestage) {
+        stage = thestage;
+        root = new Group();
         this.textFieldCoords = new HashMap<>();
         initializeUI();
     }
@@ -56,7 +56,7 @@ public class UIImplementation implements UserInterface.View,
     }
 
     private void drawGridLines(Group root) {
-        int xAndY = 114;  //where we start to draw the grid lines
+        double xAndY = 114;  //where we start to draw the grid lines
         int index = 0;
         while (index < 8) {
             int thickness;
@@ -68,6 +68,16 @@ public class UIImplementation implements UserInterface.View,
             }
             Rectangle verticalLine = getLine(xAndY + 64 * index, BOARDPADDING, BOARD_X_AND_Y, thickness);
             Rectangle horizLine = getLine(BOARDPADDING, xAndY+ 64 * index, thickness, BOARD_X_AND_Y);
+
+            if (verticalLine == null) {
+                verticalLine = new Rectangle();
+                System.out.println("verticallines");
+            }
+            if (horizLine == null) {
+                horizLine = new Rectangle();
+                System.out.println("horizlines");
+
+            }
 
             root.getChildren().addAll(verticalLine, horizLine);
 
